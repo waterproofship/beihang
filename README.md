@@ -5,7 +5,7 @@ This GitHub has 2 code files. They are both python files.
 
 To better understand the purpose of this Project, I will state overall objective and then describe why we used 2 different code files. There are multiple files other than the 2 python files which I will discuss in the overall objective below. 
 
-    Overall Objective: We need to understand that are data comes from two different sources. We need to get positioning data from a ".gpx" file and ".csv" files for EMG and IMU.
+    Overall Objective: We need to understand that our data comes from two different sources. We need to get positioning data from a ".gpx" file and ".csv" files for EMG and IMU.
 
     You should have 10 different EMG files. 
 
