@@ -15,7 +15,7 @@ To better understand the purpose of this Project, I will state overall objective
 
     BICEPS_FEM., LAT._GASTRO, LUMBAR_ES, RECTUS_FEM., TIB.ANT.
 
-    Next, IMU files should be a total of 45 files. There are 5 different bones with each 9 different degrees of freedom (DoF). The bones are represented by a number. 11 is pelvis, 12           is left upper leg, 13 is right upper leg, 14 is left lower leg, 15 is right lower leg
+    Next, IMU files should be a total of 45 files. There are 5 different bones with each 9 different degrees of freedom (DoF). The bones are represented by a number. 11 is pelvis, 12 is left upper leg, 13 is right upper leg, 14 is left lower leg, 15 is right lower leg
 
 The two code files we have are called masterScript.py and gait.py
 
@@ -35,5 +35,23 @@ This detail can be found in line 246 in our masterScript.py
 
 During step 4, we build off of step 2, we assume the "gpx" file began calculating time before our "emg" and "imu" data. So we use this step to synchronize the time to when they worked correctly together at the same time. 
 
-Finally step 5 is where we combine the correct "IMU" 
+Finally step 5 is where we combine the correct "IMU" to each bone. We have a complete data set of all 9 DoF in one ".csv" file.
+
+masterScript.py is now finished.
+
+We have just completed synchronization and organizing data. Next we will do gait analysis.
+
+gait.py is how we will achieve creating an average gait cycle.
+
+We must go to line 11 of gait.py to specify which bone file we are changing. If we follow the format of masterScript.py the file name will be "MATLAB_Ready_Running_Data_Full_##.csv"
+
+The ## should be replaced to the appropriate number.
+
+Running this script will also create gait cycle durations to know how each gait cycle different in time between each other. 
+
+Please look at the images created and also the video link labeled "tutorial video" for more directions.
+
+Make sure to download all packages in order to run script.
+
+Use a package manager to download dependencies like Pip.
 
